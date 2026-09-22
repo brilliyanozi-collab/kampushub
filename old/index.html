@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KampusHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div id="heading">
+            <h1>KampusHub</h1>
+        <h2>Papan Pengumuman Universitas Wahidiyah</h2>
+        </div>
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Pengumuman</a></li>
+            <li><a href="#">tentang</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+      <h1>Pengumuman Terbaru</h1>
+
+<div class="search-judul">
+
+    <label for="cari">Cari judul:</label>
+
+    <div class="search-judul-box">
+        <input 
+            type="text" 
+            name="cari" 
+            id="cari"
+            placeholder="Masukkan judul pengumuman..."
+        >
+
+        <button type="button" id="btnCariJudul">
+            Cari
+        </button>
+    </div>
+
+</div>
+        <article>
+            <h2>Pengumuman PAM</h2>
+            <p>Kegiatan PAM mahasiswa semester 3 dan semester 5 akan dimulai hari Senin tanggal 7 September 2026.</p>
+          </article>
+           <article>
+            <h2>Pengumuman KRS</h2>
+            <p>Batas pengumpulan KRS seluruh mahasiswa teknik terakhir yaitu pada hari Kamis tanggal 3 September 2026.</p>
+          </article>
+           <article>
+            <h2>Pengumuman UKM</h2>
+            <p>Penerimaan anggota baru UKM  Universitas Wahidiyah akan segera dibuka!.</p>
+          </article>
+
+        <h2>Pencarian Mahasiswa</h2>
+
+<div class="search-mahasiswa">
+    <label for="cariMahasiswa">Nama Mahasiswa:</label>
+
+    <div class="search-box">
+        <input 
+            type="text" 
+            id="cariMahasiswa" 
+            placeholder="Masukkan nama mahasiswa..."
+        >
+
+        <button type="button" id="btnSearch">
+            Cari
+        </button>
+    </div>
+</div>
+
+
+<div class="panel-mahasiswa">
+
+    <div id="hasilMahasiswa">
+        <p class="pesan-awal">
+            Ketik nama mahasiswa untuk mencari.
+        </p>
+    </div>
+
+</div>
+    
+        <h2 id="tentangkami">Tentang Kami</h2>
+        <p>Kampus Hub adalah platform pengumuman resmi Universitas Wahidiyah yang menyediakan informasi terbaru bagi mahasiswa dan staf.</p>
+        <footer>
+
+            <p>&copy; 2024 Kampus Hub. All rights reserved.</p>
+        </footer>
+    </main>
+    </div>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

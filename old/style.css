@@ -1,0 +1,622 @@
+/* =========================
+   RESET
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f3f4f6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+
+/* =========================
+   CONTAINER
+   ========================= */
+
+.container {
+    width: 600px;
+    max-width: calc(100% - 30px);
+    margin: 30px auto;
+
+    background-color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+#heading {
+    text-align: left;
+
+    background-color: #d11b1b;
+    color: white;
+
+    width: 100%;
+    min-height: 95px;
+
+    padding: 18px 20px;
+}
+
+#heading h1 {
+    margin: 0;
+    padding: 0;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#heading h2 {
+    margin: 5px 0 0;
+
+    font-size: 15px;
+    font-weight: normal;
+
+    opacity: 0.9;
+}
+
+#btnCariJudul {
+    padding: 9px 17px;
+
+    margin-left: 3px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #d11b1b;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#btnCariJudul:hover {
+    background-color: #b81717;
+    transform: translateY(-1px);
+}
+
+/* =========================
+   PENCARIAN JUDUL
+   ========================= */
+
+.search-judul {
+    margin-top: 12px;
+    margin-bottom: 15px;
+
+    padding: 17px;
+
+    background-color: #fafafa;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 9px;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.04);
+}
+
+.search-judul label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #333;
+}
+
+.search-judul-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Input */
+
+#cari {
+    width: 65%;
+
+    padding: 9px 11px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    background-color: white;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+#cari:focus {
+    border-color: #d11b1b;
+
+    box-shadow: 0 0 0 3px rgba(209, 27, 27, 0.08);
+}
+
+
+/* Tombol */
+
+#btnCariJudul {
+    padding: 9px 17px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #d11b1b;
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#btnCariJudul:hover {
+    background-color: #b81717;
+
+    transform: translateY(-1px);
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    border-bottom: 1px solid #eee;
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 12px 20px;
+
+    display: flex;
+    gap: 8px;
+}
+
+li {
+    display: inline;
+    margin: 0;
+}
+
+li a {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    text-decoration: none;
+    color: #5b5555;
+
+    font-size: 14px;
+
+    border-radius: 6px;
+
+    transition: 0.2s;
+}
+
+li a:hover {
+    background-color: #f5f5f5;
+    color: #e22d2d;
+}
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    padding: 20px;
+}
+
+main > h1 {
+    margin-top: 0;
+    margin-bottom: 18px;
+
+    font-size: 23px;
+    color: #222;
+}
+
+main > h2 {
+    border-top: 1px solid #eee;
+
+    padding-top: 18px;
+    margin-top: 25px;
+
+    font-size: 19px;
+    color: #222;
+}
+
+
+/* =========================
+   PENGUMUMAN
+   ========================= */
+
+article {
+    width: 100%;
+
+    padding: 15px 17px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+
+    background-color: #fff;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.04);
+
+    transition: 0.2s;
+}
+
+article:hover {
+    border-color: #ddd;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+article h2 {
+    margin: 0 0 7px;
+
+    font-size: 17px;
+    color: #222;
+}
+
+article p {
+    margin: 0;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* =========================
+   SEARCH MAHASISWA
+   ========================= */
+
+.search-mahasiswa {
+    margin-top: 12px;
+    margin-bottom: 15px;
+
+    padding: 17px;
+
+    background-color: #fafafa;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 9px;
+}
+
+.search-mahasiswa label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #333;
+}
+
+
+/* =========================
+   INPUT
+   ========================= */
+
+#cariMahasiswa {
+    width: 65%;
+
+    padding: 9px 11px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    background-color: white;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+#cariMahasiswa:focus {
+    border-color: #d11b1b;
+
+    box-shadow: 0 0 0 3px rgba(209, 27, 27, 0.08);
+}
+
+
+/* =========================
+   BUTTON CARI
+   ========================= */
+
+#btnSearch {
+    padding: 9px 17px;
+
+    margin-left: 3px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #d11b1b;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#btnSearch:hover {
+    background-color: #b81717;
+
+    transform: translateY(-1px);
+}
+
+#btnSearch:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   PANEL HASIL
+   ========================= */
+
+#hasilMahasiswa {
+    margin-top: 10px;
+}
+
+.panel-mahasiswa {
+    background-color: white;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 9px;
+
+    padding: 16px;
+
+    min-height: 50px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================
+   NAMA MAHASISWA
+   ========================= */
+
+.nama-mahasiswa {
+    position: relative;
+
+    padding: 12px 14px;
+
+    margin-bottom: 8px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+
+    background-color: #fafafa;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #333;
+
+    transition: 0.2s;
+}
+
+.nama-mahasiswa:hover {
+    background-color: #fff5f5;
+
+    border-color: #e8b2b2;
+
+    color: #d11b1b;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================
+   DETAIL MAHASISWA
+   ========================= */
+
+.detail-content h3 {
+    margin-top: 10px;
+    margin-bottom: 18px;
+
+    font-size: 21px;
+
+    color: #222;
+}
+
+.detail-item {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 11px 0;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 14px;
+}
+
+.detail-item span {
+    color: #777;
+}
+
+.detail-item strong {
+    color: #222;
+}
+
+
+/* =========================
+   BUTTON KEMBALI
+   ========================= */
+
+.btn-kembali {
+    display: block;
+
+    margin-left: auto;
+
+    padding: 2px 5px;
+
+    border: none;
+
+    background: none;
+
+    color: #777;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-kembali:hover {
+    color: #d11b1b;
+
+    transform: translateX(-3px);
+}
+
+
+/* =========================
+   PESAN AWAL
+   ========================= */
+
+.pesan-awal {
+    text-align: center;
+
+    color: #999;
+
+    font-size: 13px;
+
+    margin: 20px 0;
+}
+
+#tentangkami {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    color: #222;
+}
+
+#tentangkami + p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    border-top: 1px solid #eee;
+
+    padding: 14px 20px;
+
+    background-color: #fafafa;
+
+    text-align: center;
+
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE HP
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: calc(100% - 20px);
+
+        margin: 10px auto;
+
+        border-radius: 10px;
+    }
+
+    #heading {
+        padding: 17px;
+    }
+
+    #heading h1 {
+        font-size: 23px;
+    }
+
+    #heading h2 {
+        font-size: 13px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    main > h1 {
+        font-size: 21px;
+    }
+
+    ul {
+        padding: 10px 15px;
+
+        flex-wrap: wrap;
+    }
+
+    #cariMahasiswa {
+        width: calc(100% - 75px);
+    }
+
+    #btnSearch {
+        padding: 9px 14px;
+    }
+
+    .search-mahasiswa {
+        padding: 14px;
+    }
+
+    article {
+        padding: 13px;
+    }
+}

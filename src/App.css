@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 600px;
+    max-width: calc(100% - 30px);
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+}
+
+#heading {
+    background-color: #d11b1b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#heading h1 {
+    margin: 0 0 8px 0;
+    font-size: 30px;
+}
+
+#heading h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #d11b1b;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    padding: 20px;
+}
+
+main > h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+main > h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* =========================
+   SEARCH JUDUL
+========================= */
+
+.search-judul {
+    margin-bottom: 20px;
+}
+
+.search-judul label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.search-judul-box {
+    display: flex;
+    gap: 8px;
+}
+
+.search-judul-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-judul-box input:focus {
+    border-color: #d11b1b;
+}
+
+.search-judul-box button {
+    padding: 10px 18px;
+    background-color: #d11b1b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-judul-box button:hover {
+    background-color: #b81717;
+}
+
+/* =========================
+   PENGUMUMAN
+========================= */
+
+article {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: white;
+    transition: 0.2s;
+}
+
+article:hover {
+    border-color: #d11b1b;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+article h2 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #070000;
+}
+
+article p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* =========================
+   SEARCH MAHASISWA
+========================= */
+
+.search-mahasiswa {
+    margin-bottom: 15px;
+}
+
+.search-mahasiswa label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    gap: 8px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #d11b1b;
+}
+
+.search-box button {
+    padding: 10px 18px;
+    background-color: #d11b1b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #b81717;
+}
+
+/* =========================
+   PANEL MAHASISWA
+========================= */
+
+.panel-mahasiswa {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fafafa;
+    min-height: 80px;
+}
+
+/* =========================
+   HASIL NAMA MAHASISWA
+========================= */
+
+.nama-mahasiswa {
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nama-mahasiswa:last-child {
+    margin-bottom: 0;
+}
+
+.nama-mahasiswa:hover {
+    color: #a70a0a;
+    border-color: #d11b1b;
+    background-color: #fff;
+}
+
+/* =========================
+   PESAN AWAL
+========================= */
+
+.pesan-awal {
+    margin: 0;
+    color: #777;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* =========================
+   DETAIL MAHASISWA
+========================= */
+
+.detail-content {
+    position: relative;
+}
+
+.detail-content h3 {
+    margin: 0 0 15px 0;
+    color: #d11b1b;
+    font-size: 20px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item span {
+    color: #777;
+}
+
+.detail-item strong {
+    text-align: right;
+}
+
+/* =========================
+   BUTTON KEMBALI
+========================= */
+
+.panel-mahasiswa {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fafafa;
+    min-height: 80px;
+}
+
+.btn-kembali {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 10px;
+
+    border: none;
+    background: none;
+
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+
+    padding: 0;
+}
+
+.btn-kembali:hover {
+    color: #d11b1b;
+}
+
+/* =========================
+   TENTANG KAMI
+========================= */
+
+#tentangkami {
+    margin-top: 30px;
+}
+
+main > p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        max-width: calc(100% - 20px);
+        margin: 10px auto;
+    }
+
+    #heading {
+        padding: 18px 15px;
+    }
+
+    #heading h1 {
+        font-size: 26px;
+    }
+
+    #heading h2 {
+        font-size: 14px;
+    }
+
+    nav a {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .search-judul-box,
+    .search-box {
+        flex-direction: row;
+    }
+
+    .search-judul-box button,
+    .search-box button {
+        padding: 10px 14px;
+    }
+
+    .detail-item {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .detail-item strong {
+        text-align: left;
+    }
+}
