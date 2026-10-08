@@ -40,5 +40,12 @@ const mahasiswa = [
     nim: "159753486",
     jurusan: "Teknik Sipil",
     nilai: 91
+  },
+  {
+    nama: "Sayangku ROFIKA Bunga Matahariku lovv lovv",
+    nim: "20216110459",
+    jurusan: "Teknik Syariah",
+    nilai: "100 cantiknyaa no 1 dihatikuu",
+    status: "PACALKU"
   }
 ];

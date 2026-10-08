@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import logoUniwa from "./assets/logo-uniwa.png";
 
 type Mahasiswa = {
     nama: string;
@@ -87,13 +88,21 @@ function App() {
     return (
         <div className="container">
 
-            {/* HEADER */}
+           
             <header>
+
+                <div className="header-logo">
+                    <img src={logoUniwa} alt="Logo Universitas Wahidiyah" />
+                </div>
+        <div className="header-content">
+            <div className="top-header">
+
                 <div id="heading">
                     <h1>KampusHub</h1>
                     <h2>Papan Pengumuman Universitas Wahidiyah</h2>
                 </div>
-
+                
+            </div>
                 <nav>
                     <ul>
                         <li>
@@ -107,6 +116,7 @@ function App() {
                         </li>
                     </ul>
                 </nav>
+        </div>
             </header>
 
             {/* MAIN */}
