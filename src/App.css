@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,11 +11,11 @@ body {
 }
 
 .container {
-    width: 600px;
-    max-width: calc(100% - 30px);
-    margin: 5px auto;
+    width: 100%;
+    max-width: none;
+    margin: 0px;
     background-color: white;
-    border-radius: 12px;
+    border-radius: 0px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -32,37 +33,29 @@ header {
         #f90202 100%
 );
     color: white;
-    min-height: 110px;
+    min-height: 130px;
 }
 
 .header-logo {
-    width: 140px;
-    min-width: 140px;
+    width: 160px;
+    min-width: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header-logo img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    filter:
-        drop-shadow(0 4px 5px rgba(0, 0, 0, 0.4))
-}
 
 .header-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 
 .top-header {
-    flex: 1;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 15px 22px;
+    padding: 12px 18px;
+    margin: 0px
 }
 
 #heading {
@@ -194,6 +187,92 @@ main > h2 {
 /* =========================
    PENGUMUMAN
 ========================= */
+
+/* ===== HALAMAN PENGUMUMAN ===== */
+
+.pengumuman-page {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.pengumuman-page > h1 {
+    color: #d11b1b;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.pengumuman-subtitle {
+    color: #666;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+.pengumuman-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.berita-card {
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.berita-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.berita-card h2 {
+    color: #292929;
+    font-size: 20px;
+    margin: 0 0 12px;
+    line-height: 1.5;
+    transition: color 0.2s;
+}
+
+.berita-card:hover h2 {
+    color: #d11b1b;
+}
+
+.berita-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.status-berita {
+    padding: 30px 0;
+    text-align: center;
+    color: #666;
+}
+
+/* Tampilan HP */
+@media (max-width: 650px) {
+    .pengumuman-page {
+        margin: 25px auto;
+        padding: 0 16px;
+    }
+
+    .pengumuman-page > h1 {
+        font-size: 25px;
+    }
+
+    .pengumuman-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .berita-card {
+        padding: 20px;
+    }
+}
 
 article {
     border: 1px solid #ddd;
@@ -413,23 +492,206 @@ footer p {
     font-size: 13px;
 }
 
-/* =========================
-   RESPONSIVE HP
-========================= */
 
-@media (max-width: 600px) {
+/* ===== HALAMAN TENTANG KAMI ===== */
+
+.tentang-page {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 0 24px;
+    color: #292929;
+}
+
+/* Bagian hero */
+.tentang-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 55px 45px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #d11b1b, #a50f0f);
+    color: white;
+    box-shadow: 0 10px 28px rgba(209, 27, 27, 0.16);
+}
+
+.tentang-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 7px 13px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tentang-hero h1 {
+    margin: 0 0 18px;
+    font-size: 38px;
+    line-height: 1.25;
+}
+
+.tentang-hero p {
+    max-width: 700px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* Konten utama */
+.tentang-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 28px;
+}
+
+.tentang-card {
+    padding: 28px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.045);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.tentang-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+.tentang-card h2 {
+    margin: 0 0 14px;
+    color: #d11b1b;
+    font-size: 23px;
+}
+
+.tentang-card p {
+    margin: 0;
+    color: #626262;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* Nilai utama */
+.tentang-nilai {
+    margin-top: 30px;
+}
+
+.tentang-nilai > h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 27px;
+}
+
+.nilai-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.nilai-item {
+    padding: 24px 20px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    transition: border-color 0.25s, transform 0.25s;
+}
+
+.nilai-item:hover {
+    border-color: #d11b1b;
+    transform: translateY(-3px);
+}
+
+.nilai-item h3 {
+    margin: 0 0 10px;
+    color: #d11b1b;
+    font-size: 18px;
+}
+
+.nilai-item p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Penutup */
+.tentang-footer {
+    margin-top: 28px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #fff5f5;
+    text-align: center;
+}
+
+.tentang-footer p {
+    margin: 0;
+    color: #8f1717;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 700px) {
+    .tentang-page {
+        margin: 25px auto;
+        padding: 0 16px;
+    }
+
+    .tentang-hero {
+        padding: 35px 24px;
+        border-radius: 14px;
+    }
+
+    .tentang-hero h1 {
+        font-size: 29px;
+    }
+
+    .tentang-hero p {
+        font-size: 14px;
+    }
+
+    .tentang-content {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .tentang-card {
+        padding: 23px;
+    }
+
+    .nilai-list {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .tentang-nilai > h2 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 460px) {
 
     .container {
-        max-width: calc(100% - 20px);
-        margin: 10px auto;
+    width: 100%;
+    max-width: none;
+    margin: 0px;
+    }
+
+    .logo{
+        width: 60px;
+        height: 60px;
     }
 
     #heading {
-        padding: 18px 15px;
+        min-height: 90px;
+        padding: 10px 0px;
     }
 
     #heading h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     #heading h2 {
@@ -437,8 +699,8 @@ footer p {
     }
 
     nav a {
-        padding: 12px 10px;
-        font-size: 13px;
+        padding: 10px 8px;
+        font-size: 10px;
     }
 
     main {
@@ -462,5 +724,47 @@ footer p {
 
     .detail-item strong {
         text-align: left;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 100%;
+        max-width: none;
+        margin: 0px;
+    }
+
+    header {
+        min-height: 120px;
+    }
+
+    .header-logo {
+        width: 120px;
+        min-width: 120px;
+    }
+
+    .header-logo img {
+        width: 90px;
+        height: 90px;
+    }
+
+    #heading h1 {
+        font-size: 26px;
+    }
+
+    #heading h2 {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 18px;
+    }
+}
+
+@media (min-width: 900px) {
+    .logo {
+        width: 120px;
+        height: 120px;
     }
 }
