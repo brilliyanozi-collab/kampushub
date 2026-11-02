@@ -20,7 +20,7 @@ function Pengumuman() {
         async function ambilBerita() {
             try {
                 const response = await fetch(
-                    "https://dummyjson.com/posts"
+                    "https://dummyjson.com/post"
                 );
 
                 if (!response.ok) {

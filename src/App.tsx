@@ -45,7 +45,7 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<Beranda />} />
-                <Route path="/pengumuman" element={<Pengumuman />} />
+                <Route path="/pengumuman-kampus" element={<Pengumuman />} />
                 <Route path="/tentang" element={<Tentang />} />
             </Routes>
         </HashRouter>

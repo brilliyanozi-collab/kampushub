@@ -124,7 +124,7 @@ function App() {
                     </div>
                 </div>
 
-                {hasilPengumuman.map((data) => (
+                {pengumuman.map((data) => (
                     <article key={data.judul}>
                         <h2>{data.judul}</h2>
                         <p>{data.isi}</p>

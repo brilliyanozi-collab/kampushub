@@ -768,3 +768,7 @@ footer p {
         height: 120px;
     }
 }
+
+.container {
+    width: 1200px;
+}
